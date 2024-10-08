@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1;
+            background-color: #f4f4f4; /* Light background color for contrast */
+            color: #333; /* Dark text color */
+        }
+
+        /* Banner styling */
+        .banner {
+            position: relative;
+            text-align:  center;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 300px; /* Set a height for the banner */
+            object-fit: cover; /* Cover the area */
+            filter: brightness(95%); /* Darkens the banner image */
+        }
+
+        banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5em; /* Size of the title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+        }
+
+        /* Typing effect styling */
+        .typing {
+            display: inline-block;
+            overflow: hidden; /* Ensures the text is hidden until animated */
+            white-space: nowrap; /* Prevents line breaks */
+            border-right: .15em orange; /* Creates the cursor effect */
+            animation: typing 5s steps(23) forwards, blink-caret 0.2s step-end ;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333; /* Dark footer */
+            color: white; /* White text in footer */
+            margin-top: 20px; /* Spacing above footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://i.ibb.co/hYJL2Vc/1.png" alt="Banner Image">
+        <h1 class="typing">Hi,Welcome to My Profile</h1>
+    </div>
+
+
+</body>
+</html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+         background-color: #f5f5f5;
+            margin: 10;
+            padding: 0;
+            display: mid;
+            justify-content: FULL;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        h1 {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .platforms {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .platform {
+            text-align: center;
+        }
+
+        .platform img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .platform p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .platform span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .platforms {
+                flex-direction: row;
+            }
+
+            .platform {
+                margin-bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 10;
+                padding: 0;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 40px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5rem;
+                color: #333;
+            }
+            .profile-photo {
+                display: block;
+                margin: 20px auto;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .about-me {
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                min-height: 50px; /* To avoid shifting */
+            }
+            .typing {
+                border-right: .15em solid #333;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+            }
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            @keyframes blink-caret {
+                from, to { border-color: transparent; }
+                50% { border-color: #333; }
+            }
+            .sections-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+            }
+            .section {
+                width: 100%;
+            }
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                color: #444;
+                text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            ul li {
+                background-color: #e4e4e4;
+                margin:10px ;
+                padding: 10px;
+                border-radius: 2rem;
+                font-size: 1rem;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <h1>About Me</h1>
+    
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFHaYfYCn8svw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726851127451?e=1732752000&v=beta&t=9BIjwoJmmI482YOrceMo6N7Jhs2anhnoKPY1qdrr62w" alt="Profile Photo" class="profile-photo">
+    
+            <p class="about-me">
+                <span id="typing-text"></span>
+            </p>
+    
+            <!-- Container for both skills and education sections -->
+            <div class="sections-container">
+                <!-- Skills Section -->
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <ul>
+                        <li>HTML </li>
+                        <li>css</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+    
+                <!-- Education Section -->
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <ul>
+                        <li>Bachelor's in Computer Science</li>
+                        <li>Web Dev Bootcamp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript for typing effect
+            const typingText = document.getElementById('typing-text');
+            const text = "Hi! I'm Debabrata Paul, currently a B-tech first year student. I love to code, and I’m always learning new technologies.";
+            let index = 0;
+            let isDeleting = false;
+    
+            function type() {
+                if (!isDeleting && index < text.length) {
+                    typingText.innerHTML = text.slice(0, index + 1);
+                    index++;
+                    setTimeout(type, 100); // Typing speed
+                } else if (index === text.length) {
+                    isDeleting = true;
+                    setTimeout(() => { isDeleting = false; index = 0; type(); }, 2000); // Delay before retyping
+                }
+            }
+    
+            type();
+        </script>
+    
+    </body>
+    </html>
+    
+
+    <div class="container">
+        <h1>Want to Contact with me ?</h1>
+        <div class="platforms">
+            <!-- linkedin -->
+            <div class="platform">
+                <a href="https://www.linkedin.com/in/debabrata2024/" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="linkedin Logo">
+                    <p>linkedin</p>
+                    
+                </a>
+            </div>
+            <!-- Instagram -->
+            <div class="platform">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://www.pngitem.com/pimgs/m/2-20811_instagram-logo-red-vector-clipart-png-download-cute.png" alt="Instagram Logo">
+                    <p>Instagram</p>
+                    
+                </a>
+            </div>
+            <!-- Telegram -->
+            <div class="platform">
+                <a href="https://t.me/someone1st" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4926/4926616.png" alt="Telegram Logo">
+                    <p>Telegram</p>
+                    
+                </a>
+            </div><!-- Mail -->
+            <div class="platform">
+                <a href="mr.debabratapaul2006@gmailcom" target="_blank">
+                    <img src="https://i.pinimg.com/736x/ca/c7/f6/cac7f6edc4a990bc31773f9dac53baf4.jpg" alt="Gmail Logo">
+                    <p>Gmail</p>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
+               
+
+                
+                
+                
+     
+                
+ 
+    
